@@ -1,55 +1,65 @@
-# DTU Finedge Challenge - Team Zenith (MNNIT Allahabad)
+# Financial-Risk-Modelling
 
-## Project Overview
-This repository contains our submission for the DTU Finedge Challenge, focusing on navigating FDI reforms in India's insurance sector. Our analysis and solutions revolve around leveraging AI, strategic partnerships, and customer-centric models to improve accessibility, transparency, and trust in insurance policies.
+## Overview
+This project focuses on financial risk modeling using credit data from the Bank of Baroda. The primary objective is to analyze internal product files and CIBIL reports, clean and preprocess the data, and apply machine learning techniques to assess credit risk.
 
-## Team Members
-- **Sneha Pathak** - Pre Final Year, Production & Industrial Engineering
-- **Akhilesh Dwivedi** - Pre Final Year, Production & Industrial Engineering
-- **Harsh Ranjan** - Pre Final Year, Production & Industrial Engineering
-- **Anaranyo Sarkar** - Second Year, Electrical Engineering
+## Dataset
+- **Case Study 1**: Internal product file (Bank of Baroda)
+- **Case Study 2**: CIBIL report for the same dataset
 
-## Key Deliverables
-### 1. Problem Analysis
-- Breakdown of FDI reforms and their impact on the insurance sector
-- Identification of external and strategic gaps
-- Trust and transparency challenges in the market
+## Steps Involved
+### 1. Data Preprocessing
+- Uploading and loading the datasets
+- Cleaning missing values (e.g., removing rows with excessive null values)
+- Merging datasets based on common parameters
+- Handling imbalanced data
 
-### 2. Market Research & Customer Insights
-- Primary and secondary research on consumer behavior
-- Buyer persona analysis
-- Market constraints and opportunities
+### 2. Exploratory Data Analysis (EDA)
+- Statistical summary of features
+- Visualizations to identify trends and correlations
+- Checking for multicollinearity using Variance Inflation Factor (VIF)
 
-### 3. Product Hypothesis & Business Strategy
-- AI-driven policy recommendations
-- Tech-enabled advisory models (WhatsApp + AI chatbots)
-- Competitive benchmarking with PolicyBazaar and foreign players
+### 3. Machine Learning Model
+- Splitting the dataset into training and testing sets
+- Implementing a **Random Forest Classifier**
+- Evaluating performance using:
+  - Accuracy Score
+  - Precision, Recall, and F1-score
+  - Classification Report
 
-### 4. Financial Projections & Investment Plan
-- 5-year revenue projection
-- Cost breakdown (technology, operations, marketing)
-- Monetization strategies through advisory services and partnerships
+## Dependencies
+Ensure you have the following Python libraries installed:
+```bash
+pip install numpy pandas matplotlib scikit-learn statsmodels
+```
 
-### 5. Execution Plan & Risk Mitigation
-- Phase-wise strategy from research to execution
-- Addressing regulatory, competitive, and operational risks
-- Leveraging digital campaigns and influencer marketing
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/Financial-Risk-Modelling.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Financial-Risk-Modelling
+   ```
+3. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook Credit_Modelling_Project_BOB.ipynb
+   ```
 
-## Repository Contents
-- **Presentation Deck.pdf** - The main presentation outlining our solution
-- **Financials.xlsx** - Financial models and revenue projections
-- **ML Revenue Prediction Model.ipynb** - Machine learning model for revenue estimation based on market trends
+## Results
+- The model's predictions on credit risk classification
+- Insights derived from data analysis
+- Potential areas for further optimization
 
-## How to Use This Repository
-1. Review the **Presentation Deck.pdf** to understand our approach and key insights.
-2. Explore **Financials.xlsx** for a detailed breakdown of investment and revenue projections.
-3. Run **ML Revenue Prediction Model.ipynb** to analyze financial trends and predictions.
+## Future Enhancements
+- Implementing additional ML models (Logistic Regression, XGBoost, etc.)
+- Enhancing feature engineering
+- Deploying the model as a web application
 
-## References & External Links
-- [Ditto Insurance Overview](https://www.moneymanagementindia.net/ditto-insurance/)
-- [FDI Policy in India](https://dpiit.gov.in/foreign-direct-investment/foreign-direct-investment-policy)
-- [India's FDI Impact on Insurance](https://www.businesstoday.in/personal-finance/insurance/story/indias-insurance-revolution-100-fdi-and-its-implications-463915-2025-02-08)
+## Contributors
+- [Your Name](https://github.com/your-profile)
 
-## Contact
-For any inquiries or collaborations, feel free to reach out to Team Zenith at MNNIT Allahabad.
+## License
+This project is licensed under the MIT License.
 
